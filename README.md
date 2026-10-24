@@ -11,6 +11,12 @@ A native Kotlin + Jetpack Compose frontend for context-aware route recommendatio
 
 No API keys are required. If the environment does not have an Android SDK or Gradle distribution, Android Studio can perform the build after opening the project.
 
+## Material 3 redesign
+
+The UI has been redesigned across the complete Compose screen flow while preserving the existing route IDs, local demo state, and interaction logic. The redesign adds a cohesive blue-and-green accessible palette, shared typography and spacing, elevated rounded cards, stronger route metrics, clear demo/offline status banners, compact forms, improved emergency affordances, responsive bottom navigation, dark theme support, and a large-text accessibility preference.
+
+The sandbox used for this update does not include an Android SDK and its cached Gradle distribution is incomplete, so APK compilation must be verified from Android Studio or another Android build environment with JDK 17 and an installed SDK.
+
 ## Architecture
 
 The app uses a single Compose entry point with a stateful navigation host, reusable Material 3 components, local demo repositories, validation functions, and replaceable map/routing abstractions. DataStore is included for future preference persistence; no production backend is contacted.
